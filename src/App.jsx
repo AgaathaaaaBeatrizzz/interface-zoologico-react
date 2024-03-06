@@ -1,20 +1,14 @@
 import './App.css'
-import Navegacao from './components/Navegacao/Navegacao'
-import Atracao from './components/Atracao/Atracao'
+import Home from './pages/Home/Home';
 
 function App() {
-  const components = [];
-  for(let i = 0; i <= 2; i++) {
-    components.push(<Atracao key={i} />)
-  }
-   return (
+
+  return (
     <>
-      <Navegacao></Navegacao>
-      <div className='ctn-atracoes'>
-      {components}
-      </div>
+      <Home />
     </>
   )
 }
 
 export default App
+
